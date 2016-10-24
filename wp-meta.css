@@ -1,0 +1,11 @@
+.rwmb-group-wrapper:only-of-type  >.rwmb-label {
+	display: none !important;
+}
+
+.rwmb-group-wrapper {
+	margin-bottom: 40px;
+}
+
+.rwmb-group-wrapper:last-of-type  {
+	margin-bottom: 0;
+}

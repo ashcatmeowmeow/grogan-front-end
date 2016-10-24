@@ -1,0 +1,48 @@
+@import '_variables.scss';
+@import '_extends.scss';
+@import '_mixins.scss';
+@import '../tile/_!tile.scss';
+
+.hero__1 {
+	position: relative; //might need to remove to use centered tiles. 
+	@include change-height(
+		$hero__1-min-height, 
+		$hero__1-min-height-sm, 
+		$hero__1-min-height-md, 
+		$hero__1-min-height-lg, 
+		$hero__1-min-height-xl
+	);
+}
+
+.hero__1--content {
+	background-color: $hero__1--content-bg-color;
+}
+
+.hero--content-position__default {
+	@include abs-pos($hero__1--content-top-pos, $hero__1--content-right-pos, $hero__1--content-bottom-pos, $hero__1--content-left-pos);
+	background-color: $hero__1--content-bg-color;
+	@include breakpoint($bp-lg-min) {
+		bottom: 15px;
+		left: 15px;
+	}
+}
+
+.hero__2 {
+	position: relative; //might need to remove to use centered tiles. 
+	@include change-height(
+		$hero__2-min-height, 
+		$hero__2-min-height-sm, 
+		$hero__2-min-height-md, 
+		$hero__2-min-height-lg, 
+		$hero__2-min-height-xl
+	);
+}
+
+.hero--large-background {
+}
+
+.hero--border {
+	@include breakpoint($bp-lg-min) {
+		border: 1px solid #ECECEC;
+	}
+}

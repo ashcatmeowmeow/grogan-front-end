@@ -1,0 +1,9 @@
+.btn-group-justified.btn-group-justified > .btn-group .btn,
+.btn-group-justified.btn-group-justified > .btn {
+	border-right: 1px solid $white;
+}
+
+.btn-group-justified > .btn-group:last-of-type .btn,
+.btn-group-justified > .btn:last-of-type{
+	border-right: none !important;
+}

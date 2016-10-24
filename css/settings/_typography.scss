@@ -1,0 +1,313 @@
+/*
+BASE
+*/
+
+strong, b  {   font-weight: bold;  }
+em, i      {   font-style: italic; }
+
+
+
+@import "_vertical-rhythm.scss";
+@import "_breakpoints.scss";
+
+/*-------------------
+     Fonts
+--------------------*/
+
+
+$headerFont        : 'Domine', serif;
+$headerFontWeight  : 400;
+$bodyFont          : 'Open Sans', serif;
+$bodyFontWeight    : 300;
+$fontSmoothing     : antialiased;
+
+/*-------------------
+      Sizes
+--------------------*/
+
+/* Exact pixel values $ 14px em */
+$mini        : 0.7142rem;
+$tiny        : 0.8571rem;
+$small       : 0.9285rem;
+$medium      : 1rem;
+$large       : 1.1428rem;
+$big         : 1.2857rem;
+$huge        : 1.4285rem;
+$massive     : 1.7142rem;
+
+.text-mini {
+	font-size: $mini;
+	line-height: 1.5rem;
+}
+
+.text-tiny {
+	font-size: $tiny;
+	line-height: 1.5rem;
+}
+
+.text-medium {
+	font-size: $medium;
+	line-height: 1.5rem;
+}
+
+.text-large {
+	font-size: $large;
+	line-height: 1.5rem;
+}
+
+.text-huge {
+	font-size: $huge;
+	line-height: 1.5rem;
+}
+
+.text-massive {
+	font-size: $massive;
+	line-height: 1.5rem;
+}
+
+
+
+/*-------------------
+      Headings
+--------------------*/
+
+$header1        : $massive;
+$header2        : $big;
+$header3        : $large;
+$header4        : $medium;
+$header5        : $small;
+$header6        : $tiny;
+
+/*-------------------
+      Sub headings
+--------------------*/
+
+$subheader1        : $large;
+$subheader2        : $medium;
+$subheader3        : $small;
+
+
+/*-------------------
+      Heading Weights
+--------------------*/
+
+$h4-font-weight: 400;
+
+/*-------------------
+      Heading helper classes
+--------------------*/
+
+.bold {
+	font-weight: 600
+}
+
+body {
+  font-family: $bodyFont;
+  font-weight: $bodyFontWeight;
+}
+
+.body-font {
+	font-family: $bodyFont;
+}
+
+h1, h2, h3 {
+	font-family: $headerFont;
+	font-weight: $headerFontWeight;
+}
+
+h2, h3 {
+	text-align: center;
+}
+
+a{
+	//text-transform: capitalize;
+}
+
+h1::first-letter,
+h1 a::first-letter, 
+h2::first-letter, 
+h2 a::first-letter, 
+h3::first-letter, 
+h3 a::first-letter, 
+h4::first-letter,
+h4 a::first-letter,
+h5::first-letter,
+h5 a::first-letter,
+h6::first-letter,
+h6 a::first-letter,
+label::first-letter,
+#main-nav .dropdown-menu > li > a::first-letter{
+	text-transform: uppercase;
+}
+
+h1 {
+  @include adjust-font-size-to($header1);
+}
+
+h2 {
+  @include adjust-font-size-to($header2);
+}
+
+h3 {
+  @include adjust-font-size-to($header3);
+}
+
+h4 {
+  @include adjust-font-size-to($header4);
+  font-weight: $h4-font-weight;
+}
+
+h5 {
+  @include adjust-font-size-to($header5);
+}
+
+h6 {
+  @include adjust-font-size-to($header6);
+}
+
+.subheader1 {
+	@include adjust-font-size-to($subheader1);
+}
+
+.subheader2 {
+	@include adjust-font-size-to($subheader2);
+}
+
+.subheader3 {
+	@include adjust-font-size-to($subheader3);
+}
+
+.bigger-type {
+	font-size: $base-font-size*2.5;
+	@include breakpoint($bp-sm){
+		@include adjust-font-size-to( $base-font-size*6)
+	}
+}
+
+.text-mini {
+	font-size: $mini;
+}
+
+/*-------------------
+      Alignment helper classes
+--------------------*/
+
+.text-initial-sm {
+	@include breakpoint($bp-sm){
+		text-align: initial;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-center-xs {
+	@include breakpoint($bp-xs){
+		text-align: center;
+	}
+}
+
+.text-center-xs-min {
+	text-align: center;
+}
+
+.text-center-is {
+	@include breakpoint($bp-is){
+		text-align: center;
+	}
+}
+
+.text-center-is-min {
+	@include breakpoint($bp-is-min){
+		text-align: center;
+	}
+}
+
+.text-center-sm {
+	@include breakpoint($bp-sm){
+		text-align: center;
+	}
+}
+
+.text-center-sm-min {
+	@include breakpoint($bp-sm-min){
+		text-align: center;
+	}
+}
+
+.text-center-md {
+	@include breakpoint($bp-md){
+		text-align: center;
+	}
+}
+
+.text-center-lg {
+	@include breakpoint($bp-lg){
+		text-align: center;
+	}
+}
+
+.text-center-xl {
+	@include breakpoint($bp-xl){
+		text-align: center;
+	}
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-left-xs {
+	@include breakpoint($bp-xs){
+		text-align: left;
+	}
+}
+
+.text-left-is {
+	@include breakpoint($bp-is){
+		text-align: left;
+	}
+}
+
+.text-left-sm {
+	@include breakpoint($bp-sm){
+		text-align: left;
+	}
+}
+
+.text-left-sm-min {
+	@include breakpoint($bp-sm-min){
+		text-align: left;
+	}
+}
+
+.text-left-md {
+	@include breakpoint($bp-md){
+		text-align: left;
+	}
+}
+
+.text-left-lg {
+	@include breakpoint($bp-lg){
+		text-align: left;
+	}
+}
+
+.text-left-xl {
+	@include breakpoint($bp-xl){
+		text-align: left;
+	}
+}
+
+.text-no-wrap {
+	white-space: no-wrap;
+}
+
+/*-------------------
+      Text trans
+--------------------*/
+
+.btn, .text-uppercase {
+	text-transform: uppercase;
+}

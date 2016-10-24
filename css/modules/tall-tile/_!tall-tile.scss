@@ -1,0 +1,13 @@
+@import '_variables.scss';
+@import '_extends.scss';
+@import '_mixins.scss';
+
+.tall-tile {
+	min-height: 300px;
+	@include breakpoint($bp-sm) {
+		min-height: 400px;
+	}
+	@include breakpoint($bp-lg) {
+		min-height: 500px;
+	}
+}

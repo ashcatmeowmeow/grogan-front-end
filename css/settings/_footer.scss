@@ -1,0 +1,23 @@
+.footer {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer img {
+	width: auto;
+}
+
+.footer .footer--left-corner {
+	position: absolute;
+	left: 15px;
+	bottom: 5px;
+}
+
+.footer .footer--right-corner {
+	display: none;
+	position: absolute;
+	right: 15px;
+	bottom: 5px;
+}

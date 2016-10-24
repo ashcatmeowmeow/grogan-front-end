@@ -1,0 +1,47 @@
+@import '_variables.scss';
+@import '_extends.scss';
+@import '_mixins.scss';
+
+
+%tile {
+	padding: $tile-padding;
+}
+
+.tile {
+	padding: $tile-padding;
+	position: relative;
+}
+
+.tile--has-background {
+	color: $white;
+	padding: 0 rhythm(0.25);
+}
+
+.tile--tag {
+	@include abs-pos(
+		$tile--tag-top-pos, 
+		$tile--tag-right-pos, 
+		$tile--tag-bottom-pos, 
+		$tile--tag-left-pos
+	);
+	line-height: 0;
+    padding: $tile--tag-padding;
+    background-color: $tile--tag-bg-color;
+	color: $tile--tag-color;
+}
+
+.tile__tall {
+	min-height: $tile__tall-min-height;
+	@include breakpoint($bp-sm) {
+		min-height: $tile__tall-min-height-sm;
+	}
+	@include breakpoint($bp-md) {
+		min-height: $tile__tall-min-height-md;
+	}
+	@include breakpoint($bp-lg) {
+		min-height: $tile__tall-min-height-lg;
+	}
+	@include breakpoint($bp-xl) {
+		min-height: $tile__tall-min-height-xl;
+	}
+}

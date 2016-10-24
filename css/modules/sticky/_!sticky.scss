@@ -1,0 +1,22 @@
+@import '_variables.scss';
+@import '_extends.scss';
+@import '_mixins.scss';
+
+.scroll-sticky-bar__lg-min {
+}
+
+.fix-bar__lg-min {
+	@extend .pos-fixed__lg-min;
+	@include breakpoint($bp-lg-min) {
+		top: 0;
+		width: 100% !important;
+	}
+}
+
+.fix-bar__md-min {
+	//@extend .pos-fixed__md-min;
+	@include breakpoint($bp-md-min) {
+		top: 0;
+		width: 100% !important;
+	}
+}

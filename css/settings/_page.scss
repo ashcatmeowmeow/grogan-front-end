@@ -1,0 +1,19 @@
+@import '_colors.scss';
+
+/*-------------------
+      Page
+--------------------*/
+
+$pageBackground      : #F7F7F7;
+$pageOverflowX       : hidden;
+
+$fontSize            : 14px;
+$lineHeight          : 1.33;
+$textColor           : rgba(0, 0, 0, 0.8);
+
+$linkColor           : #009FdA;
+$linkUnderline       : none;
+$linkHoverColor      : lighten( $linkColor, 5);
+
+$highlightBackground : rgba(255, 255, 160, 0.4);
+$highlightColor      : $textColor;

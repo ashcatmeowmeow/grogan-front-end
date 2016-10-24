@@ -1,0 +1,32 @@
+@import '_variables.scss';
+@import '_extends.scss';
+@import '_mixins.scss';
+
+p img {
+	margin-bottom: 0;
+}
+
+.image__small {
+	max-width: $image-small-width;
+}
+
+.image__medium {
+	max-width: $image-medium-width;
+}
+
+.image__centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.image__constrained {
+    width: auto;
+    max-width: 200px;
+	max-height: 200px;
+}
+
+.image__constrained--block {
+	height: 200px;
+}

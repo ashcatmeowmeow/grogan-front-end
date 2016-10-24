@@ -1,0 +1,82 @@
+@import '_variables.scss';
+@import '_extends.scss';
+@import '_mixins.scss';
+
+.centered-table {
+    display: table;
+	position: relative;
+	width: 100%;
+}
+
+.centered-table--content {
+	@extend .tile;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center; //if you use table this is the only means of horizontal centering. 
+}
+
+.centered-trans__xs {
+
+}
+
+.centered-trans__is {
+
+}
+
+.centered-trans__sm {
+
+}
+
+.centered-trans--content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include translate (-50%, -50%);
+}
+
+.centered-trans--content__xs {
+	@include breakpoint($bp-xs) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include translate (-50%, -50%);
+	}
+}
+
+.centered-trans--content__is {
+	@include breakpoint($bp-is) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include translate (-50%, -50%);
+	}
+}
+
+.centered-trans--content__sm {
+	@include breakpoint($bp-sm) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include translate (-50%, -50%);
+	}
+}
+
+.centered-trans--content__sm-min {
+	@include breakpoint($bp-sm-min) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include translate (-50%, -50%);
+	}
+}
+
+.vert-centered-trans--content__full-center-sm-min {
+	position: absolute;
+	top: 50%;
+	@include translateY(-50%);
+	@include breakpoint($bp-sm-min) {
+		top: 50%;
+		left: 50%;
+		@include translate (-50%, -50%);
+	}
+}

@@ -1,0 +1,51 @@
+form {
+	color: $black;
+}
+
+input {
+	//width: 100%;
+}
+
+.remove-required .gfield_required {
+	display: none;
+}
+/*
+.next-prev-lockup .gform_page_footer{
+	display: table;
+	width: 100%;
+}
+
+.next-prev-lockup .gform_page_footer input{
+	display: table-cell;
+	width: 49%;
+}
+*/
+
+.gform_drop_instructions {
+	display: none;
+}
+
+.gform_footer, .gform_page_footer {
+	text-align: center;
+}
+
+.gform_validation_container {
+	display: none !important;
+}
+
+.gform_delete {
+	width: auto;
+	cursor: pointer;
+}
+
+.no-label label {
+	display: none !important;
+}
+
+.checkbox-no-label .checkbox label {
+	display: inline-block !important;
+}
+
+.checkbox-no-label label {
+	display: none !important;
+}

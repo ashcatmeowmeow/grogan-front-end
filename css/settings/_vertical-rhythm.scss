@@ -1,0 +1,194 @@
+@import "compass/typography/vertical_rhythm";
+@import "_breakpoints.scss";
+
+@include establish-baseline;
+$base-font-size: 16px; // Sets the base font size
+$base-line-height: 32px; // Sets the base line height;
+$round-to-nearest-half-line: true; // Allows compass to round to  multiples of 0.5x line height 
+$rhythm-unit: "rem"; // Sets rhythm unit to rem. Remove to use default em unit.
+
+@import "compass/layout/grid-background";
+$show-baseline-grid-backgrounds: true;
+$grid-background-baseline-height: $base-line-height;
+
+
+$height-block-1-height: rhythm(1);
+$height-block-2-height: rhythm(2);
+$height-block-3-height: rhythm(3);
+$height-block-3-height: rhythm(3);
+$height-block-4-height: rhythm(4);
+$height-block-5-height: rhythm(5);
+$height-block-6-height: rhythm(6);
+$height-block-7-height: rhythm(7);
+$height-block-8-height: rhythm(8);
+
+.module > *:last-child,
+.module > *:last-child > *:last-child,
+.module > *:last-child > *:last-child > *:last-child,
+.module > *:last-child > *:last-child > *:last-child > *:last-child,
+.module > *:last-child > *:last-child > *:last-child > *:last-child > *:last-child {
+  margin-bottom: 0;
+}
+
+body {
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	//@include baseline-grid-background($base-line-height, red);
+}
+
+section, .multi-tile {
+	margin-bottom: rhythm(2);
+}
+
+.stripe.primaryColor-bg, .multi-tile.secondaryColor-bg .stripe.secondaryColor-bg, .stripe.necklace{
+	padding-top: rhythm(1);
+	padding-bottom: rhythm(1);
+}
+
+.stripe.primaryColor-bg:last-child, 
+.multi-tile.secondaryColor-bg:last-child, 
+.stripe.secondaryColor-bg:last-child, 
+.stripe.necklace:last-child{
+	margin-bottom: 0;
+}
+
+hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,
+fieldset,hr,
+{
+    margin-bottom: rhythm(1);
+}
+
+h2, .checkbox label{
+	margin-bottom: rhythm(.5);
+}
+
+h4,h5,h6 {
+	margin-bottom: rhythm(.25);
+}
+
+h1{
+	margin-top: rhythm(0);
+	margin-bottom: rhythm(0);
+}
+
+.subheader1, .subheader2, .subheader3 {
+    @extend .no-margin;
+}
+
+[class*='col-'] {
+	margin-bottom: 30px;
+}
+
+.form-group:last-child {
+	margin-bottom: 0;
+}
+
+
+/*RHYTHM BLOCKS*/
+
+.rhythm-block-quarter {
+	margin-bottom: rhythm(0.25);
+}
+
+.rhythm-block-quarter-top {
+	margin-top: rhythm(0.25);
+}
+
+.rhythm-block-half {
+	margin-bottom: rhythm(0.5);
+}
+
+.rhythm-block-half-top {
+	margin-top: rhythm(0.5);
+}
+
+.rhythm-block {
+	margin-bottom: rhythm(1);
+}
+
+.rhythm-block-top{
+	margin-top: rhythm(1);
+}
+
+.rhythm-block-plus {
+	margin-bottom: rhythm(1.5);
+}
+
+.rhythm-block-plus-top {
+	margin-top: rhythm(1.5);
+}
+
+.rhythm-block-double {
+	margin-bottom: rhythm(2);
+}
+
+.rhythm-block-double-top {
+	margin-top: rhythm(2);
+}
+
+.rhythm-block-padding-both {
+	padding-top: rhythm(1);
+	padding-bottom: rhythm(1);
+}
+
+.rhythm-block-double-padding-both {
+	padding-top: rhythm(1);
+	padding-bottom: rhythm(1);
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.no-padding-left {
+	padding: 0 !important;
+}
+
+.no-margin{
+	margin: 0 !important;
+}
+
+.no-margin-bottom {
+	margin-bottom: 0 !important;
+}
+
+.push-up-1 {
+	margin-top: -100px;
+}
+
+/*HEIGHT BLOCKS*/
+
+.height-block-1 {
+	min-height: $height-block-1-height;
+}
+
+.height-block-2 {
+	min-height: $height-block-2-height;
+}
+
+.height-block-3 {
+	min-height: $height-block-3-height;
+}
+
+.height-block-4 {
+	min-height: $height-block-4-height;
+}
+
+.height-block-5 {
+	min-height: $height-block-5-height;
+}
+
+.height-block-6 {
+	min-height: $height-block-6-height;
+}
+
+.height-block-7 {
+	min-height: $height-block-7-height;
+}
+
+.height-block-8 {
+	min-height: $height-block-8-height;
+}

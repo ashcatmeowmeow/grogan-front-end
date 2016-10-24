@@ -1,0 +1,62 @@
+@import "_breakpoints.scss";
+
+.has-background {
+	color: $white;
+}
+
+.rug {
+	background-size: cover;
+	background-image: url('images/rug.jpg');
+}
+
+.na {
+	background-size: cover;
+	background-image: url('images/na.jpg');
+}
+
+.tele {
+	background-size: cover;
+	background-image: url('images/tele.jpg');
+}
+
+.yellow {
+	background-size: cover;
+	background-image: url('images/yellow.jpg');
+}
+
+.necklace {
+	background-size: cover;
+	background-image: url('images/necklace.jpg');
+}
+
+.blue-ring {
+	background-size: cover;
+	background-image: url('images/blue-ring.jpg');
+}
+
+.painting {
+	background-size: cover;
+	background-image: url('images/painting.jpg');
+}
+
+.calder {
+	background-size: cover;
+	background-image: url('images/calder.jpg');
+}
+
+
+.no-background{
+	background-image: none !important;
+}
+
+.no-background__xs-lg {
+	@include breakpoint($bp-xs-min $bp-lg-min) {
+		background-image: none !important;
+	}
+}
+
+.no-background__lg-min {
+	@include breakpoint($bp-lg-min) {
+		background-image: none !important;
+	}
+}

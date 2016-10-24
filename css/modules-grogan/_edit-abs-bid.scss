@@ -1,0 +1,24 @@
+.input-group__grogan-edit-bid {
+	@include breakpoint($bp-sm-min){
+		width: 235px;
+	}
+}
+
+.grogan-edit-abs-bid{
+	max-width: 250px;
+	@include breakpoint($bp-sm-min){
+		max-width: 430px;
+	}
+}
+
+.grogan-edit-abs-bid .btn {
+	width: 120px;
+}
+
+.grogan-edit-abs-bid--submit{
+	@include breakpoint($bp-sm-min){
+	    position: absolute;
+		right: 0;
+		top: 7px;
+	}
+}

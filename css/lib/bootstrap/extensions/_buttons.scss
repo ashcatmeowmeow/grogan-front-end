@@ -1,0 +1,8 @@
+@import "compass/css3/transition";
+
+.btn {
+	min-width: 100px;
+	font-weight: 600;
+	@include single-transition(all, 200ms, ease-in-out);
+	border-bottom: none !important;
+}

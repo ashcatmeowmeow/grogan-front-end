@@ -1,0 +1,34 @@
+// Minimum screen size for large screens.
+$screen-xl-min: ($screen-xl-min);
+
+// reinit origin mixin for create grid columns
+@mixin make-grid-columns($i: 1, $list: ".col-xs-#{$i}, .col-is-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}, .col-xl-#{$i}") {
+  @for $i from (1 + 1) through $grid-columns {
+    $list: "#{$list}, .col-xs-#{$i}, .col-is-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}, .col-xl-#{$i}";
+  }
+  #{$list} {
+    position: relative;
+    // Prevent columns from collapsing when empty
+    min-height: 1px;
+    // Inner gutter via padding
+    padding-left: ($grid-gutter-width / 2);
+    padding-right: ($grid-gutter-width / 2);
+  }
+}
+
+@include make-grid-columns;
+
+// Container width for the custom grid.
+//
+// Set the container width, and override it for fixed navbars in media queries.
+.container {
+  @media (min-width: $screen-xl-min){
+    width: $container-xl;
+  }
+}
+
+// Function that creates the custom grid
+// Intermediate small grid
+@media (min-width: $screen-xl-min){
+  @include make-grid(xl);
+}

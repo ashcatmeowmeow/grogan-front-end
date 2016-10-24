@@ -1,0 +1,59 @@
+@import "compass/css3";
+@import "compass/utilities";
+
+.col-center {
+	float: none !important;
+	margin: 0 auto;
+}
+
+.sample {}
+
+.sticky-bar__lg-min {
+	
+}
+
+.has-background a, .has-background a:hover, .has-background a:focus{
+	color: white;
+}
+
+.primaryColor-bg a {
+	color: white !important;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: static;
+}
+
+#content {
+	padding-bottom:100px; /* Height of the footer element */
+}
+
+.display-inline-block {
+	display: inline-block;
+}
+
+.display-block {
+	display: block;
+}
+
+.border-circle {
+  @include border-radius(50%);
+}
+/*
+.specialties-multi-tile .col-xs-12 .row:nth-child(2) .col-md-4 {
+	display: none;
+}
+*/
+
+.no-title-border .border-spacer{
+	display: none;
+}
+
+.hero .btn {
+	min-width: 50%;
+}
+
+.tile-fix .tile {
+	width: 350px;
+}

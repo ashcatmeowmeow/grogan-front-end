@@ -1,0 +1,13 @@
+@import '../settings/_!settings.scss';
+@import '_footer-push-down.scss';
+@import '_positioning.scss';
+@import '_height.scss';
+@import '_wp-meta.scss';
+
+img {
+	width: 100%;
+}
+
+.light-grey-bg {
+	background: $lightGrey;
+}

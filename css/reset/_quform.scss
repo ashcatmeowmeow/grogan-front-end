@@ -1,0 +1,91 @@
+@import "compass/reset/utilities";
+@import "compass/typography/vertical_rhythm";
+
+
+.iphorm-elements input {
+	width: 100%;
+}
+
+.iphorm-labels-above > .iphorm-element-spacer > label {
+    position: relative;
+    padding-bottom: 0;
+}
+
+.iphorm-elements.iphorm-elements{
+	//@include nested-reset;
+}
+
+.iphorm-submit-input-wrap {
+    float: none;
+	text-align: center;
+}
+
+.iphorm-submit-wrap button {
+    border: none;
+    background: none;
+    text-align: center;
+    width: auto;
+    overflow: visible;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    line-height: auto;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.iphorm-element-spacer {
+    padding-bottom: 0;
+}
+
+.iphorm-submit-wrap button span {
+    padding-left: 0;
+    background: none;
+    border: none;
+}
+
+.iphorm-submit-wrap button em {
+    font-style: normal;
+    padding-right: 0;
+    background: transparent;
+}
+
+.iphorm-submit-wrap button span, button em {
+    display: inline;
+    height: auto;
+    line-height: normal;
+    margin: 0;
+    color: inherit;
+    cursor: pointer;
+}
+
+.iphorm-errors-list > .iphorm-error.iphorm-error {
+	padding: 3px 10px 3px 25px;
+	margin: 0;
+	line-height: 16px;
+	background: #F3CAC7 url(../images/error.png) no-repeat 3px center;
+	color: #000;
+	font-size: inherit;
+	font-weight: normal;
+	display: inline-block;
+	border: 1px solid #fa8b83;
+	float: left;
+}
+
+.iphorm-submit-wrap button:hover em {
+	background: transparent;
+}
+.iphorm-submit-wrap button:active em {
+	background: transparent;
+}
+.iphorm-submit-wrap button:hover span {
+	background: transparent;
+}
+.iphorm-submit-wrap button:active span {
+	background: transparent;
+}
+
+.iphorm-loading-wrap .iphorm-loading, .iphorm-edit-form-wrap {
+	display: none !important;
+}

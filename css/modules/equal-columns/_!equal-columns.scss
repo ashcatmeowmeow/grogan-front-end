@@ -1,0 +1,13 @@
+ .equal-columns {
+	overflow: hidden;
+}
+
+.equal-columns--column {
+	background-size: auto;
+	margin-bottom: -99999px !important;
+	padding-bottom: 99999px !important;
+}
+
+.equal-columns-table{
+	display: table;
+}

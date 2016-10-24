@@ -1,0 +1,78 @@
+@import "../../../modules/centering/_!centering.scss";
+@import "../../../settings/_breakpoints.scss";
+@import "../../../settings/_vertical-rhythm.scss";
+@import "../../../settings/_colors.scss";
+@import "compass/css3/box-shadow";
+
+.collapsed-uncollapsed-mix .form-group:only-of-type {
+	margin-bottom: 0;
+}
+
+.collapsed-uncollapsed-mix .btn {
+	@include breakpoint($bp-sm-min) {
+		padding-top: 22px !important;
+		padding-bottom: 22px !important;  
+	}
+	@include breakpoint($bp-md-min) {
+		border: none !important; 
+	}	
+}
+
+.collapsed-uncollapsed-mix.collapsed-uncollapsed-mix label{
+	font-size: 14px; 
+}
+
+.collapsed-uncollapsed-mix .btn-group {
+	border-right: 1px solid $grey;
+}
+
+.collapsed-uncollapsed-mix .btn-group:last-of-type{
+	border-right: none;
+}
+
+.uncollapse-dropdown__sm-min > .dropdown-menu {
+	@include breakpoint($bp-sm-min) {
+		display: block !important;
+		position: relative;
+		top: auto;
+		width: 100%;
+		box-shadow: none;
+		border: none;
+		background: none;
+	}
+}
+
+.uncollapse-dropdown__md-min > .dropdown-menu {
+	@include breakpoint($bp-md-min) {
+		display: block !important;
+		position: relative;
+		top: auto;
+		width: 100%;
+		box-shadow: none;
+		border: none;
+		border-right: 1px solid $black;
+		background: none;
+	}
+}
+
+.uncollapse-dropdown__sm-min > a, .uncollapse-dropdown__sm-min > button {
+	@include breakpoint($bp-sm-min) {
+		display: none;
+	}
+}
+
+
+.dropdown-menu__centered {	
+	min-height: $height-block-3-height;
+}
+
+.uncollapse-dropdown__sm-min .dropdown-menu__centered {	
+	@include breakpoint($bp-sm-min) {
+		min-height: $height-block-2-height;
+	}
+}
+
+.dropdown-menu__centered--content {
+	@extend .centered-trans--content;
+	min-width: 140px;
+}

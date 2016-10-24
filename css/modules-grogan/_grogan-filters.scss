@@ -1,0 +1,43 @@
+.grogan-filter--categories-dropdown {
+	height: $height-block-8-height;
+}
+
+
+.grogan-categories-button {
+	background-color: #F0F0F0;
+}
+
+.grogan-filter--extra-dropdown {
+	height: $height-block-6-height;
+}
+
+.grogan-filter--search-bar {
+	@include breakpoint($bp-sm-min){
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.grogan-filters {
+	margin-bottom: rhythm(.5);
+	@include breakpoint($bp-sm-min){
+		margin-bottom: 0;
+	}
+}
+
+.grogan-filter--container a {
+	font-size: $mini;
+	@include breakpoint($bp-is-min){
+		font-size: 14px;
+	}
+}
+
+.fix-bar__lg-min .grogan-adv-search a {
+	display: block;
+	padding: 10px;
+	background-color: $white;
+	max-width: 135px;
+	@include single-box-shadow();
+	@extend .border-thin-light;
+	background-color: $card-bg-color;
+}

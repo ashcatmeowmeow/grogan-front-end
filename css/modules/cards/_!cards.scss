@@ -1,0 +1,9 @@
+@import '_variables.scss';
+@import '_extends.scss';
+@import '_mixins.scss';
+
+.card {
+	@include single-box-shadow();
+	@extend .border-thin-light;
+	background-color: $card-bg-color;
+}

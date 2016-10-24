@@ -1,0 +1,33 @@
+.horizontal-list li {
+	display: inline;
+}
+
+.horizontal-list-block li {
+	display: inline;
+}
+
+.horizontal-list-sm-min li {
+	@include breakpoint($bp-sm-min){
+		display: inline;
+	}
+}
+
+.horizontal-list__pipes li:after {
+	content: " | ";
+	padding: 0 5px;
+}
+
+.horizontal-list__pipes  li:last-child:after {
+    content: normal;
+}
+
+.horizontal-list__pipes-sm-min li:after {
+	@include breakpoint($bp-sm-min){
+		content: " | ";
+		padding: 0 5px;
+	}
+}
+
+.horizontal-list__pipes-sm-min  li:last-child:after {
+    content: normal;
+}

@@ -1,0 +1,8 @@
+$default-box-shadow-color:       $veryLightGrey;
+$default-box-shadow-h-offset:    1px;
+$default-box-shadow-v-offset:    1px;
+$default-box-shadow-blur:        1px;
+$default-box-shadow-spread:      3px;
+$default-box-shadow-inset:       null;
+
+@import "compass/css3/box-shadow";

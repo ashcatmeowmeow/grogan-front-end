@@ -1,0 +1,31 @@
+#gform_8 .gform_body {
+	display: none;
+}
+
+.create-account--list ul {
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.create-account--list li {
+    padding: 6px 12px;
+	display: inline-block;
+}
+
+.create-account--list .active {
+	border-bottom: 3px solid #006748;
+}
+
+.constrain-select select{
+	display: block;
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	@include breakpoint($bp-sm-min){
+		max-width: 500px;
+	}
+}
+
+.no-label label{
+	display: none;
+}
+

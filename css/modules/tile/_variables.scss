@@ -1,0 +1,19 @@
+@import '../../settings/_!settings.scss';
+
+$tile-padding : rhythm(1);
+$tile-bg-color: $white;
+
+$tile--tag-top-pos:     0;
+$tile--tag-right-pos:   auto;
+$tile--tag-bottom-pos:  auto;
+$tile--tag-left-pos:    0;
+
+$tile--tag-padding:   rhythm(.5) rhythm(.25);
+$tile--tag-bg-color:  $primaryColor;
+$tile--tag-color:     $white;
+
+$tile__tall-min-height: 300px;
+$tile__tall-min-height-sm: 400px;
+$tile__tall-min-height-md: 400px;
+$tile__tall-min-height-lg: 400px;
+$tile__tall-min-height-xl: 400px;

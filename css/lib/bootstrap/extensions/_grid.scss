@@ -1,0 +1,15 @@
+.container__full-width {
+	width: 100%;
+}
+
+.container__full-bleed {
+	width: 100%;
+	padding: 0;
+}
+
+.container__full-bleed-md-min {
+	@include breakpoint($bp-md-min){
+		width: 100%;
+		padding: 0;
+	}
+}

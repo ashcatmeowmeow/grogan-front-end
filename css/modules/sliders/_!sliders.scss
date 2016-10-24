@@ -1,0 +1,10 @@
+@import '_variables.scss';
+@import '_extends.scss';
+@import '_mixins.scss';
+
+.slider {
+  width: 100% !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;  
+  user-select: none;
+}

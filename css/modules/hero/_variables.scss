@@ -1,0 +1,29 @@
+@import '../../settings/_!settings.scss';
+@import '../../base/_!base.scss';
+
+
+$hero__1-min-height: 300px;
+$hero__1-min-height-sm: 400px;
+$hero__1-min-height-md: 400px;
+$hero__1-min-height-lg: 400px;
+$hero__1-min-height-xl: 400px;
+
+$hero__1--content-top-pos: auto;
+$hero__1--content-right-pos: auto;
+$hero__1--content-bottom-pos: 15px;
+$hero__1--content-left-pos: 0;
+
+$hero__1--content-bg-color: $strongTransparentBlack;
+
+$hero__2-min-height: 200px;
+$hero__2-min-height-sm: 200px;
+$hero__2-min-height-md: 200px;
+$hero__2-min-height-lg: 200px;
+$hero__2-min-height-xl: 200px;
+
+$hero__2--content-top-pos: auto;
+$hero__2--content-right-pos: auto;
+$hero__2--content-bottom-pos: 0;
+$hero__2--content-left-pos: 0;
+
+$hero__2--content-bg-color: $strongTransparentBlack;

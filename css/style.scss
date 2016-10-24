@@ -1,0 +1,21 @@
+/*
+
+Theme Name: grogan theme v9
+
+Theme URI: http://www.dylemacgregor.com
+
+Description: A custom theme for Grogan and Co.
+
+Version: 1.1
+
+Author URI: http://www.dylemacgregor.com
+
+*/
+
+@import 'reset/_reset.scss';
+@import 'reset/_quform.scss';
+@import 'lib/_lib.scss';
+@import 'settings/_!settings.scss';
+@import 'base/_!base.scss';
+@import 'modules/_!modules.scss';
+@import 'modules-grogan/_!modules-grogan.scss';

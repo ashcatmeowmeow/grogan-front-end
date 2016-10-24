@@ -1,0 +1,15 @@
+%anchor-all-states {
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.has-background a{
+	color: $white;
+}
+
+.has-background a:hover{
+	color: darken($white, 20%);
+}

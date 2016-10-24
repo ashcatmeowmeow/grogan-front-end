@@ -1,0 +1,18 @@
+@import '_variables.scss';
+@import '_extends.scss';
+@import '_mixins.scss';
+
+/*
+.stripe {
+	padding-top: $stripe-padding;
+	padding-bottom: $stripe-padding;
+}
+*/
+
+.stripe--title {
+	text-align: $stripe--title-align;
+}
+
+.stripe__centered *{
+	text-align: center;
+}

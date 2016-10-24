@@ -1,0 +1,49 @@
+@mixin change-height ($min, $sm, $md, $lg, $xl) {
+	min-height: $min;
+	@include breakpoint($bp-sm) {
+		min-height: $sm;
+	}
+	@include breakpoint($bp-md) {
+		min-height: $md;
+	}
+	@include breakpoint($bp-lg) {
+		min-height: $lg;
+	}
+	@include breakpoint($bp-xl) {
+		min-height: $xl;
+	}
+}
+
+$height-1-height: 300px;
+$height-1-height-sm: 400px;
+$height-1-height-md: 400px;
+$height-1-height-lg: 400px;
+$height-1-height-xl: 400px;
+
+$height-2-height: 200px;
+$height-2-height-sm: 300px;
+$height-2-height-md: 300px;
+$height-2-height-lg: 300px;
+$height-2-height-xl: 300px;
+
+.height-1 {
+	position: relative; //might need to remove to use centered tiles. 
+	@include change-height(
+		$height-1-height,
+		$height-1-height-sm,
+		$height-1-height-md,
+		$height-1-height-lg,
+		$height-1-height-xl
+	);
+}
+
+.height-2 {
+	position: relative; //might need to remove to use centered tiles. 
+	@include change-height(
+		$height-2-height,
+		$height-2-height-sm,
+		$height-2-height-md,
+		$height-2-height-lg,
+		$height-2-height-xl
+	);
+}

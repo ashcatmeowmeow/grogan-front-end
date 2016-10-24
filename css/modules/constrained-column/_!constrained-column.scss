@@ -1,0 +1,66 @@
+@import '_variables.scss';
+@import '_extends.scss';
+@import '_mixins.scss';
+
+.constrained-1 {
+	max-width: $constrained-1;
+}
+
+.constrained-1-xs {
+	@include breakpoint($bp-xs){
+		max-width: $constrained-1-xs;
+	}
+}
+
+.constrained-1-is {
+	@include breakpoint($bp-is){
+		max-width: $constrained-1-is;
+	}
+}
+
+.constrained-1-sm {
+	@include breakpoint($bp-sm){
+		max-width: $constrained-1-sm;
+	}
+}
+
+.constrained-1-md {
+	@include breakpoint($bp-md){
+		max-width: $constrained-1-md;
+	}
+}
+
+.constrained-1-lg {
+	@include breakpoint($bp-lg){
+		max-width: $constrained-1-lg;
+	}
+}
+
+.constrained-1-xl {
+	@include breakpoint($bp-xl){
+		max-width: $constrained-1-xl;
+	}
+}
+
+.constrained-2 {
+	max-width: $constrained-2;
+}
+
+.constrained-430 {
+	max-width: 430px;
+}
+
+
+.constrained-600 {
+	@include breakpoint($bp-sm-min $bp-md-min){
+		max-width: 600px;
+	}
+}
+
+.constrained-600-all {
+	max-width: 600px;
+}
+
+.constrained-700-all {
+	max-width: 700px;
+}
